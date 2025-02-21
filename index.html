@@ -3,96 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DogShis Token</title>
+    <title>DogShis - The Ultimate Meme Coin</title>
     <style>
-        * {
+        body {
+            background: #222;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #fff;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            background: url('musta.jpg') no-repeat center center fixed;
-            background-size: cover;
+            overflow-x: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
         }
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            width: 100%;
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 50vh;
+            max-width: 600px;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 50px;
+            text-shadow: 3px 3px 0px #ff0, -3px -3px 0px #f00;
         }
         p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
+            font-size: 20px;
         }
-        nav {
-            margin: 20px 0;
+        .btn {
+            background: yellow;
+            color: black;
+            padding: 15px 30px;
+            font-size: 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .ticker {
+            font-size: 22px;
             font-weight: bold;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            position: absolute;
-            bottom: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffcc00;
+            position: fixed;
+            bottom: 10px;
             width: 100%;
+            background: rgba(0, 0, 0, 0.8);
             padding: 10px;
+            animation: tickerMove 10s linear infinite;
+        }
+        @keyframes tickerMove {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .dog-image {
+            width: 250px;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            border-radius: 20px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: yellow;
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ff0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to DogShis Token</h1>
-        <p>The eco-conscious cryptocurrency token. DogShis burns tokens based on your dog's contribution to the environment!</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About DogShis</h2>
-        <p>DogShis is a unique cryptocurrency token that promotes sustainability. Tokens are burned daily based on the weight of dog waste, contributing to a cleaner planet!</p>
-    </section>
-
-    <section id="roadmap">
-        <h2>Roadmap</h2>
-        <p>Stay tuned for our exciting plans as we grow DogShis into a movement that helps both pet owners and the environment.</p>
-    </section>
-
-    <section id="tokenomics">
-        <h2>Tokenomics</h2>
-        <p>DogShis operates on the Solana blockchain. Detailed tokenomics will be released soon!</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Join our community on Discord, Twitter, or email us for more information.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 DogShis Token. All rights reserved.</p>
-    </footer>
+    <img src="musta.jpg" alt="DogShis Mascot" class="dog-image">
+    <div class="container">
+        <h1>🚀 Welcome to DogShis! 🐶🔥</h1>
+        <p>The most **shitty** but fun meme coin on Solana! Backed by dog waste, cleaned up daily! 💩💸</p>
+        <button class="btn" onclick="alert('To the Moon! 🚀')">BUY NOW</button>
+        <div class="social-links">
+            <a href="https://www.instagram.com/dogshiscoin" target="_blank">Instagram</a>
+	    <a href="https://t.me/dogshiscoin" target="_blank">Telegram</a>
+            <a href="https://x.com/DogShisCoin" target="_blank">X</a>
+        </div>
+    </div>
+    <div class="ticker">🔥 DogShis is mooning! Buy before it’s too late! 🔥</div>
 </body>
 </html>
